@@ -14,7 +14,7 @@ class Form{
     }
     display() {
         this.title.html("FRUIT CATCHER");
-        this.title.position(350, 50);
+        this.title.position(400, 80);
         this.title.style('font-size', '70px');
         this.title.style('color', 'skyblue');
         this.input.position(550,400);
@@ -45,8 +45,8 @@ class Form{
         });
 
         this.reset.mousePressed(() => {
-            //add code to reset the values of the gameState and the playerCount nodes to 0 in the database
-            
+            player.updateCount(0);
+            game.update(0);
         });
 
     }
